@@ -1,0 +1,6 @@
+docker build --tag=ssb .
+
+
+docker run -Ptid -v /tmp:/tmp ssb
+
+the `-v` mounts the host path to the container path. Any file written there will appear in the host filesystem.
